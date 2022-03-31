@@ -57,7 +57,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -104,4 +104,30 @@
             android:layout_marginTop="40dp"
             android:text="Hasil" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pergi ke activity selanjutnya!"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="halamanSelanjutnya"
+        />
+
+    <EditText
+        android:id="@+id/editNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="nomor tlfn"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="pergiDialup"
+        android:text="Pergi ke Dialup"
+        />
 </LinearLayout>
